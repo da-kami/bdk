@@ -49,6 +49,9 @@ async-trait = "0.1"
 js-sys = "0.3"
 rand = { version = "^0.7", features = ["wasm-bindgen"] }
 
+[patch.crates-io]
+electrum-client = { git = 'https://github.com/afilini/rust-electrum-client', branch = 'fix/electrs-empty-lines', optional = true }
+
 [features]
 minimal = []
 compiler = ["miniscript/compiler"]
